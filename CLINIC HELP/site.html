@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Início - Clinic Help</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="clinichelpicon.png">
+</head>
+<body>
+
+  <header>
+    <nav>
+      <ul class="tabs">
+        <li><a href="site.html" class="active">Início</a></li>
+        <li><a href="quemsomos.html">Quem somos</a></li>
+        <li><a href="clinicas.php">Clínicas</a></li>
+        <li><a href="login.php">Login</a></li>
+        <li><a href="contato.html">Contato</a></li>
+        <li><a href="sair.php">deslogar</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+  <div class="image-container">
+    <img src="clinichelplogo-removebg-preview.png" alt="Clinic Help Logo" class="logo">
+  </div>
+
+  <div class="carousel-texto">
+    <p><b>Conectamos você às melhores clínicas com agilidade, confiança e tecnologia. Agende sua consulta em poucos cliques!</b></p>
+  </div>
+
+  <div class="carousel">
+    <div class="carousel-slide fade">
+      <img src="clinica1.jpg" alt="Imagem 1">
+    </div>
+    <div class="carousel-slide fade">
+      <img src="clinica2.jpg" alt="Imagem 2">
+    </div>
+    <div class="carousel-slide fade">
+      <img src="clinica3.jpg" alt="Imagem 3">
+    </div>
+  </div>
+</main>
+
+<script>
+  let index = 0;
+  const slides = document.querySelectorAll('.carousel-slide');
+
+  function showSlide() {
+    slides.forEach((slide, i) => {
+      slide.style.display = (i === index) ? 'block' : 'none';
+    });
+    index = (index + 1) % slides.length;
+    setTimeout(showSlide, 3000); 
+  }
+
+  window.onload = showSlide;
+</script>
+
+
+</body>
+</html>

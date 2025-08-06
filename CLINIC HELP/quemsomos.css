@@ -1,0 +1,88 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f5f9ff;
+}
+
+header {
+  background-color: #0077cc;
+  padding: 10px 0;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.tabs {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.tabs li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 8px 15px;
+  border-radius: 5px;
+  transition: background 0.3s;
+}
+
+.tabs li a:hover,
+.tabs li a.active {
+  background-color: #005fa3;
+}
+
+.quem-somos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 20px;
+  background-color: #f0f8ff;
+}
+
+.conteudo {
+  flex: 1 1 400px;
+  max-width: 600px;
+  padding: 20px;
+}
+
+.conteudo h1 {
+  font-size: 2.5rem;
+  color: #0077cc;
+  margin-bottom: 20px;
+}
+
+.conteudo p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.imagem {
+  flex: 1 1 300px;
+  max-width: 500px;
+  text-align: center;
+}
+
+.img-quemsomos {
+  max-width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 768px) {
+  .quem-somos {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .conteudo, .imagem {
+    max-width: 90%;
+  }
+}
