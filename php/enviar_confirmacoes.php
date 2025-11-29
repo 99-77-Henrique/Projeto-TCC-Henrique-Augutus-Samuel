@@ -42,7 +42,7 @@ if ($result->num_rows > 0) {
         $mail->Host = 'smtp.gmail.com';
         $mail->SMTPAuth = true;
         $mail->Username = 'CLINIC.H3LP@gmail.com';
-        $mail->Password = 'jrpk drqm rged ryng';
+        $mail->Password = '*********';
         $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
         $mail->Port = 587;
         $mail->CharSet = 'UTF-8';
@@ -76,3 +76,4 @@ if ($result->num_rows > 0) {
 }
 
 ?>
+
