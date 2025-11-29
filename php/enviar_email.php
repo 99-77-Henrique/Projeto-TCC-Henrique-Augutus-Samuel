@@ -17,7 +17,7 @@ try {
     $mail->SMTPAuth = true;
 
     $mail->Username = 'Clinic.h3lp@gmail.com';
-    $mail->Password = 'jrpk drqm rged ryng';
+    $mail->Password = '*************';
 
     $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
     $mail->Port = 587;
@@ -45,3 +45,4 @@ try {
     echo "Falha ao enviar mensagem. Erro: {$mail->ErrorInfo}";
 }
 ?>
+
